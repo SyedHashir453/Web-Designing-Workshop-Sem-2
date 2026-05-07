@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest Number Finder</title>
+</head>
+<body>
+    <h2>Enter 5 Numbers</h2>
+    <input type="number" id="n1"><br><br>
+    <input type="number" id="n2"><br><br>
+    <input type="number" id="n3"><br><br>
+    <input type="number" id="n4"><br><br>
+    <input type="number" id="n5"><br><br>
+    <button onclick="findlargest()">Find Largest</button>
+    <h3 id="result"></h3>
+
+    <script>
+        function findlargest() {
+            var a = Number(document.getElementById("n1").value);
+            var b = Number(document.getElementById("n2").value);
+            var c = Number(document.getElementById("n3").value);
+            var d = Number(document.getElementById("n4").value);
+            var e = Number(document.getElementById("n5").value);
+            if(a == "" || b == "" || c == "" || d == "" || e == "")
+            {
+                document.getElementById("result").innerText = "Enter all the fields";
+                return;
+            }
+            var largest;
+            if (a >= b && a >= c && a >= d && a >= e) 
+            {
+                largest = a;
+            } 
+            else if (b >= a && b >= c && b >= d && b >= e) 
+            {
+                largest = b;
+            } 
+            else if (c >= a && c >= b && c >= d && c >= e) 
+            {
+                largest = c;
+            } 
+            else if (d >= a && d >= b && d >= c && d >= e) 
+            {
+                largest = d;
+            } 
+            else 
+            {
+                largest = e;
+            }
+            document.getElementById("result").innerText = "Largest Number: " + largest;
+        }
+    </script>
+</body>
+</html>

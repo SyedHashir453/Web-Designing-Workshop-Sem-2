@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    background-color: lightgray;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    width: 500px;
+    margin: 60px auto;
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    margin: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+#para {
+    margin-top: 15px;
+}
+
+#output {
+    margin-top: 20px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
