@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = {
+        name : "Hashir",
+        age: "20",
+        branch : "CSE",
+        section: "21"
+        }
+        let jsonData = JSON.stringify(student);
+
+        for(let key in student)
+            console.log(key + " : " + student[key]);
+
+        let promise = new Promise(function(resolve, reject){
+
+        let success = true;
+
+        if(success)
+            resolve("Task completed");
+        else
+            reject("Task failed");
+        });
+
+        promise.then(function(result){
+            console.log(result);
+        }).catch(function(error){
+            console.log(error);
+        });
+    </script>
+</body>
+</html>

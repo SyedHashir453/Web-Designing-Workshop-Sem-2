@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hello JavaScript</h2>
+    <script>
+        alert("JavaScript is running!");
+        console.log("Hello Students");
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Student Profile</h2>
+    <script>
+        let name = "Hashir";
+        let age = 20;
+        let marks = 75;
+
+        console.log("Name: " + name);
+        console.log("Age: " + age);
+
+        if(marks >= 50)
+            console.log("Pass");
+        else
+            console.log("Fail");
+        for(let i = 0; i < 5; i++) {
+            let stars = "";
+            for(let j = 0; j <= i; j++) {
+                stars += "*";
+            }
+            console.log(stars);
+        }
+        const add = (a,b) => a + b; //constant variable declared and initialize
+        console.log(add(5,3));
+
+        let numbers = [1,2,3,4];
+        let square = numbers.map(num => num * num); //map function is used to modify each element of the array
+        console.log(square);
+
+        let result = numbers.filter(num => num > 15); //filter function is used to 
+        let result2 = square.filter(num => num > 15);
+        console.log(result);
+        console.log(result2);
+
+        let total1 = 0;
+        let total2 = 0;
+        let sum1 = numbers.reduce((total1, num) => total1 + num); //reduce function reduces array to single value
+        let sum2 = square.reduce((total2, num) => total2 + num);
+        console.log(sum1);
+        console.log(sum2);
+    </script>
+</body>
+</html>
